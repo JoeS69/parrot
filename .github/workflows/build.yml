@@ -304,6 +304,19 @@ jobs:
           mkdir -p src-tauri/resources/espeak-ng
           cp "$(brew --prefix espeak-ng)/bin/espeak-ng" src-tauri/resources/espeak-ng/espeak-ng
 
+          # The bundled binary must be codesigned with hardened runtime and a
+          # secure timestamp, otherwise Apple notarization rejects the entire
+          # app bundle.  APPLE_SIGNING_IDENTITY is set by the earlier
+          # "verify certificate" step when a Developer ID cert is available.
+          if [ -n "$APPLE_SIGNING_IDENTITY" ]; then
+            codesign --force --options runtime --timestamp \
+              --sign "$APPLE_SIGNING_IDENTITY" \
+              src-tauri/resources/espeak-ng/espeak-ng
+            echo "Signed bundled espeak-ng with: $APPLE_SIGNING_IDENTITY"
+          else
+            echo "No signing identity — bundled espeak-ng will be unsigned"
+          fi
+
       - name: Bundle espeak-ng binary (Ubuntu)
         if: contains(inputs.platform, 'ubuntu')
         run: |
@@ -311,28 +324,21 @@ jobs:
           mkdir -p src-tauri/resources/espeak-ng
           cp "$(which espeak-ng)" src-tauri/resources/espeak-ng/espeak-ng
 
-      - name: Bundle espeak-ng binary (Windows x64)
-        if: contains(inputs.platform, 'windows') && !contains(inputs.target, 'aarch64')
+      - name: Bundle espeak-ng binary (Windows)
+        if: contains(inputs.platform, 'windows')
         shell: pwsh
         run: |
           $espeakVersion = "1.51"
           $msiUrl = "https://github.com/espeak-ng/espeak-ng/releases/download/$espeakVersion/espeak-ng-X64.msi"
           Invoke-WebRequest -Uri $msiUrl -OutFile espeak-ng.msi
-          msiexec /a espeak-ng.msi /qn TARGETDIR="$PWD\espeak-extract"
+          # Extract MSI contents with 7z for reliable path handling
+          7z x espeak-ng.msi -oespeak-extract -y
+          # Find the binary regardless of internal MSI directory structure
+          $bin = Get-ChildItem -Path espeak-extract -Recurse -Filter "espeak-ng.exe" | Select-Object -First 1
+          if (-not $bin) { Write-Error "espeak-ng.exe not found in extracted MSI"; exit 1 }
           New-Item -ItemType Directory -Force -Path "src-tauri\resources\espeak-ng" | Out-Null
-          Copy-Item "espeak-extract\PFiles\eSpeak NG\espeak-ng.exe" "src-tauri\resources\espeak-ng\espeak-ng.exe"
-
-      - name: Bundle espeak-ng binary (Windows ARM64)
-        if: contains(inputs.platform, 'windows') && contains(inputs.target, 'aarch64')
-        shell: pwsh
-        run: |
-          # No native ARM64 build — use x64 binary (runs under WoW64 emulation)
-          $espeakVersion = "1.51"
-          $msiUrl = "https://github.com/espeak-ng/espeak-ng/releases/download/$espeakVersion/espeak-ng-X64.msi"
-          Invoke-WebRequest -Uri $msiUrl -OutFile espeak-ng.msi
-          msiexec /a espeak-ng.msi /qn TARGETDIR="$PWD\espeak-extract"
-          New-Item -ItemType Directory -Force -Path "src-tauri\resources\espeak-ng" | Out-Null
-          Copy-Item "espeak-extract\PFiles\eSpeak NG\espeak-ng.exe" "src-tauri\resources\espeak-ng\espeak-ng.exe"
+          Copy-Item $bin.FullName "src-tauri\resources\espeak-ng\espeak-ng.exe"
+          Write-Host "Bundled espeak-ng from: $($bin.FullName)"
 
       - name: Build with Tauri
         uses: tauri-apps/tauri-action@v0
