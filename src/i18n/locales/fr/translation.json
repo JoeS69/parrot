@@ -1,0 +1,353 @@
+{
+  "tray": {
+    "settings": "Paramètres...",
+    "checkUpdates": "Rechercher des mises à jour...",
+    "copyLastText": "Copier le dernier texte",
+    "unloadModel": "Décharger le modèle",
+    "quit": "Quitter"
+  },
+  "sidebar": {
+    "general": "Général",
+    "models": "Modèles",
+    "advanced": "Avancé",
+    "history": "Historique",
+    "debug": "Débogage",
+    "about": "À propos"
+  },
+  "onboarding": {
+    "subtitle": "Pour commencer, choisissez un modèle TTS",
+    "recommended": "Recommandé",
+    "download": "Télécharger",
+    "downloading": "Téléchargement...",
+    "customModelDescription": "Non officiellement pris en charge",
+    "downloadFailed": "Échec du téléchargement. Veuillez réessayer.",
+    "modelCard": {
+      "accuracy": "précision",
+      "speed": "vitesse"
+    },
+    "models": {},
+    "errors": {
+      "loadModels": "Échec du chargement des modèles disponibles",
+      "downloadModel": "Échec du téléchargement du modèle : {{error}}"
+    },
+    "permissions": {
+      "title": "Autorisations requises",
+      "description": "Parrot a besoin de quelques autorisations pour fonctionner correctement.",
+      "accessibility": {
+        "title": "Accès à l'accessibilité",
+        "description": "Nécessaire pour coller du texte dans vos applications."
+      },
+      "grant": "Accorder l'autorisation",
+      "granted": "Accordé",
+      "waiting": "En attente...",
+      "allGranted": "Tout est prêt !",
+      "errors": {
+        "checkFailed": "Échec de la vérification des autorisations. Veuillez réessayer.",
+        "requestFailed": "Échec de la demande d'autorisation. Veuillez réessayer."
+      }
+    }
+  },
+  "modelSelector": {
+    "custom": "Personnalisé",
+    "active": "Actif",
+    "switching": "Changement...",
+    "noModelsAvailable": "Aucun modèle disponible",
+    "extracting": "Extraction de {{modelName}}...",
+    "extractingMultiple": "Extraction de {{count}} modèles...",
+    "extractingGeneric": "Extraction...",
+    "downloading": "Téléchargement {{percentage}}%",
+    "downloadingMultiple": "Téléchargement de {{count}} modèles...",
+    "modelReady": "Modèle Prêt",
+    "loading": "Chargement de {{modelName}}...",
+    "loadingGeneric": "Chargement...",
+    "modelError": "Erreur du Modèle",
+    "modelUnloaded": "Modèle Déchargé",
+    "noModelDownloadRequired": "Aucun Modèle - Téléchargement Requis",
+    "deleteModel": "Supprimer {{modelName}}",
+    "downloadSpeed": "{{speed}} Mo/s",
+    "capabilities": {
+      "languageSelection": "Prend en charge plusieurs langues",
+      "multiLanguage": "Multilingue",
+      "singleLanguage": "Prend en charge uniquement cette langue",
+      "languageOnly": "{{language}} uniquement"
+    },
+    "cancel": "Annuler",
+    "cancelDownload": "Annuler le téléchargement"
+  },
+  "settings": {
+    "modelSettings": {
+      "title": "Paramètres de {{model}}",
+      "noSettingsNeeded": "Ce modèle fonctionne automatiquement sans configuration nécessaire.",
+      "kokoroVoice": {
+        "title": "Voix",
+        "description": "Sélectionnez la voix Kokoro à utiliser. Auto suit le paramètre de langue.",
+        "auto": "Auto (Par langue)",
+        "searchPlaceholder": "Rechercher des voix...",
+        "loading": "Chargement des voix...",
+        "noResults": "Aucune voix trouvée",
+        "loadError": "Impossible de charger les voix disponibles."
+      }
+    },
+    "models": {
+      "title": "Modèles TTS",
+      "description": "Sélectionnez un modèle de synthèse vocale ou téléchargez des modèles supplémentaires.",
+      "downloaded": "Téléchargés",
+      "available": "Disponibles au Téléchargement",
+      "deleteConfirm": "Êtes-vous sûr de vouloir supprimer {{modelName}} ? Vous devrez le télécharger à nouveau pour l'utiliser.",
+      "deleteActiveConfirm": "{{modelName}} est votre modèle actif. Le supprimer arrêtera la synthèse vocale jusqu'à ce que vous sélectionniez un nouveau modèle. Êtes-vous sûr ?",
+      "deleteTitle": "Supprimer le modèle",
+      "filters": {
+        "all": "Tous",
+        "multiLanguage": "Multilingue",
+        "translation": "Traduction",
+        "allLanguages": "Toutes les langues"
+      },
+      "noModelsMatch": "Aucun modèle ne correspond à ce filtre.",
+      "yourModels": "Modèles téléchargés",
+      "availableModels": "Disponibles au téléchargement"
+    },
+    "general": {
+      "title": "Général",
+      "shortcut": {
+        "title": "Raccourcis Parrot",
+        "description": "Configurer les raccourcis clavier pour la synthèse vocale",
+        "loading": "Chargement des raccourcis...",
+        "none": "Aucun raccourci configuré",
+        "notFound": "Raccourci non trouvé",
+        "pressKeys": "Appuyez sur les touches...",
+        "bindings": {
+          "speak": {
+            "name": "Raccourci de Parole",
+            "description": "Le raccourci clavier pour lire le texte sélectionné à voix haute."
+          },
+          "play_pause": {
+            "name": "Play / Pause Shortcut",
+            "description": "The keyboard shortcut to pause or resume speech playback."
+          },
+          "cancel": {
+            "name": "Raccourci d'Annulation",
+            "description": "Le raccourci clavier pour arrêter la lecture vocale."
+          }
+        },
+        "errors": {
+          "restore": "Échec de la restauration du raccourci original",
+          "set": "Échec de la définition du raccourci : {{error}}",
+          "reset": "Échec de la réinitialisation du raccourci à sa valeur d'origine"
+        }
+      },
+      "language": {
+        "title": "Langue",
+        "description": "Sélectionnez la langue pour la synthèse vocale.",
+        "descriptionUnsupported": "Ce modèle ne prend pas en charge la sélection de langue.",
+        "searchPlaceholder": "Rechercher des langues...",
+        "noResults": "Aucune langue trouvée",
+        "auto": "Auto"
+      },
+      "pushToTalk": {
+        "label": "Maintenir pour Écouter",
+        "description": "Maintenez le raccourci pour écouter la synthèse vocale, relâchez pour arrêter"
+      }
+    },
+    "sound": {
+      "title": "Son",
+      "audioFeedback": {
+        "label": "Signal sonore",
+        "description": "Jouer un son au début et à la fin de la lecture vocale"
+      },
+      "outputDevice": {
+        "title": "Périphérique de sortie",
+        "description": "Sélectionnez votre périphérique de sortie audio pour le signal sonore",
+        "placeholder": "Sélectionner un périphérique de sortie...",
+        "loading": "Chargement..."
+      },
+      "volume": {
+        "title": "Volume",
+        "description": "Ajuster le volume du signal sonore"
+      }
+    },
+    "advanced": {
+      "title": "Avancé",
+      "groups": {
+        "app": "Application",
+        "history": "Historique",
+        "experimental": "Expérimental"
+      },
+      "experimentalToggle": {
+        "label": "Fonctionnalités Expérimentales",
+        "description": "Activer les fonctionnalités expérimentales encore en développement."
+      },
+      "startHidden": {
+        "label": "Démarrer masqué",
+        "description": "Lancer dans la barre système sans ouvrir la fenêtre."
+      },
+      "autostart": {
+        "label": "Lancer au démarrage",
+        "description": "Démarrer automatiquement Parrot lorsque vous vous connectez à votre ordinateur."
+      },
+      "showTrayIcon": {
+        "label": "Afficher l'icône de la barre",
+        "description": "Afficher l'icône de Parrot dans la barre système."
+      },
+      "overlay": {
+        "title": "Position de la fenêtre de lecture",
+        "description": "Afficher un retour visuel pendant la lecture vocale. Sur Linux, 'Aucune' est recommandé.",
+        "options": {
+          "none": "Aucune",
+          "bottom": "Bas",
+          "top": "Haut"
+        }
+      },
+      "modelUnload": {
+        "title": "Décharger le modèle",
+        "description": "Libérer automatiquement la mémoire GPU/CPU lorsque le modèle n'a pas été utilisé pendant le temps spécifié",
+        "options": {
+          "never": "Jamais",
+          "immediately": "Immédiatement",
+          "min2": "Après 2 minutes",
+          "min5": "Après 5 minutes",
+          "min10": "Après 10 minutes",
+          "min15": "Après 15 minutes",
+          "hour1": "Après 1 heure",
+          "sec5": "Après 5 secondes (Débogage)"
+        }
+      }
+    },
+    "history": {
+      "title": "Historique",
+      "openFolder": "Ouvrir le dossier des enregistrements",
+      "loading": "Chargement de l'historique...",
+      "empty": "Pas encore de texte lu. Utilisez le raccourci pour commencer à parler !",
+      "copyToClipboard": "Copier le texte dans le presse-papiers",
+      "save": "Enregistrer l'entrée",
+      "unsave": "Retirer des favoris",
+      "delete": "Supprimer l'entrée",
+      "deleteError": "Échec de la suppression de l'entrée. Veuillez réessayer."
+    },
+    "debug": {
+      "title": "Débogage",
+      "logDirectory": {
+        "title": "Répertoire des journaux",
+        "description": "Emplacement où les fichiers journaux sont stockés"
+      },
+      "logLevel": {
+        "title": "Niveau de journalisation",
+        "description": "Définir le niveau de détail de la journalisation"
+      },
+      "updateChecks": {
+        "label": "Vérifier les mises à jour",
+        "description": "Vérifier automatiquement les nouvelles versions de Parrot"
+      },
+      "soundTheme": {
+        "label": "Thème sonore",
+        "description": "Choisir un thème sonore pour les retours de début et de fin de lecture vocale"
+      },
+      "historyLimit": {
+        "title": "Limite d'historique",
+        "description": "Nombre maximum d'entrées d'historique à conserver",
+        "entries": "entrées"
+      },
+      "historyRetention": {
+        "title": "Suppression automatique des enregistrements",
+        "description": "Supprimer automatiquement les anciens enregistrements pour économiser de l'espace",
+        "never": "Jamais",
+        "preserveLimit": "Conserver les {{count}} plus récents",
+        "days3": "Après 3 jours",
+        "weeks2": "Après 2 semaines",
+        "months3": "Après 3 mois",
+        "placeholder": "Sélectionner la période de conservation..."
+      },
+      "keyboardImplementation": {
+        "title": "Keyboard Implementation",
+        "description": "Choose the keyboard shortcut backend.",
+        "bindingsReset": "Keyboard shortcuts were incompatible and reset to defaults"
+      },
+      "paths": {
+        "appData": "Données de l'application :",
+        "models": "Modèles :",
+        "settings": "Paramètres :"
+      }
+    },
+    "about": {
+      "title": "À propos",
+      "version": {
+        "title": "Version",
+        "description": "Version actuelle de Parrot"
+      },
+      "appDataDirectory": {
+        "title": "Emplacement des données de l'application",
+        "description": "Emplacement où Parrot stocke ses données"
+      },
+      "sourceCode": {
+        "title": "Code source",
+        "description": "Voir le code source et contribuer",
+        "button": "Voir sur GitHub"
+      },
+      "supportDevelopment": {
+        "title": "Soutenir le développement",
+        "description": "Aidez-nous à continuer à construire Parrot",
+        "button": "Faire un don"
+      },
+      "acknowledgments": {
+        "title": "Remerciements",
+        "handy": {
+          "title": "Handy",
+          "description": "Le projet original dont Parrot a été dérivé",
+          "details": "Parrot est un fork de Handy par CJ Pais. Merci d'avoir construit la base qui a rendu Parrot possible."
+        }
+      }
+    }
+  },
+  "footer": {
+    "downloadingModel": "Téléchargement de {{model}}...",
+    "checkingUpdates": "Recherche de mises à jour...",
+    "updateAvailable": "Mise à jour disponible : {{version}}",
+    "updateAvailableShort": "Mise à jour disponible",
+    "upToDate": "À jour",
+    "downloadUpdate": "Télécharger la mise à jour",
+    "restart": "Redémarrer",
+    "updateCheckingDisabled": "Vérification des mises à jour désactivée",
+    "downloading": "Téléchargement... {{progress}}%",
+    "installing": "Installation...",
+    "preparing": "Préparation...",
+    "checkForUpdates": "Rechercher des mises à jour"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "reset": "Réinitialiser",
+    "add": "Ajouter",
+    "remove": "Supprimer",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "create": "Créer",
+    "update": "Mettre à jour",
+    "close": "Fermer",
+    "open": "Ouvrir",
+    "default": "Par défaut",
+    "enabled": "Activé",
+    "disabled": "Désactivé",
+    "on": "Activé",
+    "off": "Désactivé",
+    "yes": "Oui",
+    "no": "Non",
+    "noOptionsFound": "Aucune option trouvée"
+  },
+  "accessibility": {
+    "permissionsRequired": "Autorisations d'accessibilité requises",
+    "permissionsDescription": "Parrot a besoin des autorisations d'accessibilité pour fonctionner correctement.",
+    "openSettings": "Ouvrir les Préférences Système",
+    "dismiss": "Ignorer"
+  },
+  "errors": {
+    "loadDirectory": "Erreur lors du chargement du répertoire : {{error}}"
+  },
+  "appLanguage": {
+    "title": "Langue de l'application",
+    "description": "Changer la langue de l'interface de Parrot"
+  },
+  "overlay": {
+    "speaking": "Lecture en cours...",
+    "processing": "Traitement..."
+  }
+}

@@ -1,0 +1,353 @@
+{
+  "tray": {
+    "settings": "Cài đặt...",
+    "checkUpdates": "Kiểm tra cập nhật...",
+    "copyLastText": "Sao chép văn bản mới nhất",
+    "unloadModel": "Dỡ mô hình",
+    "quit": "Thoát"
+  },
+  "sidebar": {
+    "general": "Chung",
+    "models": "Mô hình",
+    "advanced": "Nâng cao",
+    "history": "Lịch sử",
+    "debug": "Gỡ lỗi",
+    "about": "Giới thiệu"
+  },
+  "onboarding": {
+    "subtitle": "Để bắt đầu, hãy chọn một mô hình TTS",
+    "recommended": "Đề xuất",
+    "download": "Tải xuống",
+    "downloading": "Đang tải xuống...",
+    "customModelDescription": "Không được hỗ trợ chính thức",
+    "downloadFailed": "Tải xuống thất bại. Vui lòng thử lại.",
+    "modelCard": {
+      "accuracy": "độ chính xác",
+      "speed": "tốc độ"
+    },
+    "models": {},
+    "errors": {
+      "loadModels": "Không thể tải các mô hình có sẵn",
+      "downloadModel": "Không thể tải mô hình: {{error}}"
+    },
+    "permissions": {
+      "title": "Cần cấp quyền",
+      "description": "Parrot cần một số quyền để hoạt động bình thường.",
+      "accessibility": {
+        "title": "Quyền truy cập Trợ năng",
+        "description": "Cần thiết để nhập văn bản vào các ứng dụng của bạn."
+      },
+      "grant": "Cấp quyền",
+      "granted": "Đã cấp",
+      "waiting": "Đang chờ...",
+      "allGranted": "Hoàn tất!",
+      "errors": {
+        "checkFailed": "Không thể kiểm tra quyền. Vui lòng thử lại.",
+        "requestFailed": "Không thể yêu cầu quyền. Vui lòng thử lại."
+      }
+    }
+  },
+  "modelSelector": {
+    "custom": "Tùy chỉnh",
+    "active": "Đang hoạt động",
+    "switching": "Đang chuyển...",
+    "noModelsAvailable": "Không có mô hình nào",
+    "extracting": "Đang giải nén {{modelName}}...",
+    "extractingMultiple": "Đang giải nén {{count}} mô hình...",
+    "extractingGeneric": "Đang giải nén...",
+    "downloading": "Đang tải xuống {{percentage}}%",
+    "downloadingMultiple": "Đang tải xuống {{count}} mô hình...",
+    "modelReady": "Mô Hình Sẵn Sàng",
+    "loading": "Đang tải {{modelName}}...",
+    "loadingGeneric": "Đang tải...",
+    "modelError": "Lỗi Mô Hình",
+    "modelUnloaded": "Mô Hình Đã Gỡ",
+    "noModelDownloadRequired": "Chưa Có Mô Hình - Cần Tải Xuống",
+    "deleteModel": "Xóa {{modelName}}",
+    "downloadSpeed": "{{speed}} MB/s",
+    "capabilities": {
+      "languageSelection": "Hỗ trợ nhiều ngôn ngữ đầu vào",
+      "multiLanguage": "Đa ngôn ngữ",
+      "singleLanguage": "Chỉ hỗ trợ ngôn ngữ này",
+      "languageOnly": "Chỉ {{language}}"
+    },
+    "cancel": "Hủy",
+    "cancelDownload": "Hủy tải xuống"
+  },
+  "settings": {
+    "modelSettings": {
+      "title": "Cài đặt {{model}}",
+      "noSettingsNeeded": "Mô hình này hoạt động tự động mà không cần cấu hình.",
+      "kokoroVoice": {
+        "title": "Giọng nói",
+        "description": "Chọn giọng Kokoro để sử dụng. Tự động theo cài đặt ngôn ngữ.",
+        "auto": "Tự động (Theo ngôn ngữ)",
+        "searchPlaceholder": "Tìm kiếm giọng nói...",
+        "loading": "Đang tải giọng nói...",
+        "noResults": "Không tìm thấy giọng nói",
+        "loadError": "Không thể tải danh sách giọng nói."
+      }
+    },
+    "models": {
+      "title": "Mô hình TTS",
+      "description": "Chọn mô hình chuyển đổi văn bản thành giọng nói hoặc tải thêm mô hình.",
+      "downloaded": "Đã tải xuống",
+      "available": "Có thể tải xuống",
+      "deleteConfirm": "Bạn có chắc chắn muốn xóa {{modelName}}? Bạn sẽ cần tải lại để sử dụng.",
+      "deleteActiveConfirm": "{{modelName}} là mô hình đang hoạt động của bạn. Xóa nó sẽ dừng phát giọng nói cho đến khi bạn chọn một mô hình mới. Bạn có chắc không?",
+      "deleteTitle": "Xóa mô hình",
+      "filters": {
+        "all": "Tất cả",
+        "multiLanguage": "Đa ngôn ngữ",
+        "translation": "Dịch thuật",
+        "allLanguages": "Tất cả ngôn ngữ"
+      },
+      "noModelsMatch": "Không có mô hình nào khớp với bộ lọc này.",
+      "yourModels": "Mô hình đã tải",
+      "availableModels": "Có sẵn để tải xuống"
+    },
+    "general": {
+      "title": "Chung",
+      "shortcut": {
+        "title": "Phím tắt Parrot",
+        "description": "Cấu hình phím tắt cho chuyển đổi văn bản thành giọng nói",
+        "loading": "Đang tải phím tắt...",
+        "none": "Chưa cấu hình phím tắt",
+        "notFound": "Không tìm thấy phím tắt",
+        "pressKeys": "Nhấn phím...",
+        "bindings": {
+          "speak": {
+            "name": "Phím tắt phát giọng nói",
+            "description": "Phím tắt để đọc to văn bản đã chọn."
+          },
+          "play_pause": {
+            "name": "Play / Pause Shortcut",
+            "description": "The keyboard shortcut to pause or resume speech playback."
+          },
+          "cancel": {
+            "name": "Phím tắt hủy",
+            "description": "Phím tắt để dừng phát giọng nói."
+          }
+        },
+        "errors": {
+          "restore": "Không thể khôi phục phím tắt gốc",
+          "set": "Không thể đặt phím tắt: {{error}}",
+          "reset": "Không thể đặt lại phím tắt về giá trị gốc"
+        }
+      },
+      "language": {
+        "title": "Ngôn ngữ",
+        "description": "Chọn ngôn ngữ để tổng hợp văn bản thành giọng nói.",
+        "descriptionUnsupported": "Mô hình này không hỗ trợ chọn ngôn ngữ.",
+        "searchPlaceholder": "Tìm kiếm ngôn ngữ...",
+        "noResults": "Không tìm thấy ngôn ngữ",
+        "auto": "Tự động"
+      },
+      "pushToTalk": {
+        "label": "Giữ để nói",
+        "description": "Giữ phím tắt để nghe giọng nói, thả để dừng"
+      }
+    },
+    "sound": {
+      "title": "Âm thanh",
+      "audioFeedback": {
+        "label": "Phản hồi âm thanh",
+        "description": "Phát âm thanh khi bắt đầu và kết thúc phát giọng nói"
+      },
+      "outputDevice": {
+        "title": "Thiết bị đầu ra",
+        "description": "Chọn thiết bị đầu ra âm thanh ưa thích của bạn cho âm thanh phản hồi",
+        "placeholder": "Chọn thiết bị đầu ra...",
+        "loading": "Đang tải..."
+      },
+      "volume": {
+        "title": "Âm lượng",
+        "description": "Điều chỉnh âm lượng của âm thanh phản hồi"
+      }
+    },
+    "advanced": {
+      "title": "Nâng cao",
+      "groups": {
+        "app": "Ứng dụng",
+        "history": "Lịch sử",
+        "experimental": "Thử nghiệm"
+      },
+      "experimentalToggle": {
+        "label": "Tính năng thử nghiệm",
+        "description": "Bật các tính năng thử nghiệm đang trong quá trình phát triển."
+      },
+      "startHidden": {
+        "label": "Khởi động ẩn",
+        "description": "Khởi động vào khay hệ thống mà không mở cửa sổ."
+      },
+      "autostart": {
+        "label": "Khởi động cùng hệ thống",
+        "description": "Tự động khởi động Parrot khi bạn đăng nhập vào máy tính."
+      },
+      "showTrayIcon": {
+        "label": "Hiển thị biểu tượng khay",
+        "description": "Hiển thị biểu tượng Parrot trong khay hệ thống."
+      },
+      "overlay": {
+        "title": "Vị trí lớp phủ",
+        "description": "Hiển thị lớp phủ phản hồi trực quan trong quá trình phát giọng nói. Trên Linux, 'Không có' được khuyến nghị.",
+        "options": {
+          "none": "Không có",
+          "bottom": "Dưới",
+          "top": "Trên"
+        }
+      },
+      "modelUnload": {
+        "title": "Giải phóng mô hình",
+        "description": "Tự động giải phóng bộ nhớ GPU/CPU khi mô hình không được sử dụng trong thời gian quy định",
+        "options": {
+          "never": "Không bao giờ",
+          "immediately": "Ngay lập tức",
+          "min2": "Sau 2 phút",
+          "min5": "Sau 5 phút",
+          "min10": "Sau 10 phút",
+          "min15": "Sau 15 phút",
+          "hour1": "Sau 1 giờ",
+          "sec5": "Sau 5 giây (Gỡ lỗi)"
+        }
+      }
+    },
+    "history": {
+      "title": "Lịch sử",
+      "openFolder": "Mở thư mục ghi âm",
+      "loading": "Đang tải lịch sử...",
+      "empty": "Chưa có văn bản nào được đọc. Sử dụng phím tắt để bắt đầu phát giọng nói!",
+      "copyToClipboard": "Sao chép văn bản vào clipboard",
+      "save": "Lưu mục",
+      "unsave": "Xóa khỏi đã lưu",
+      "delete": "Xóa mục",
+      "deleteError": "Không thể xóa mục. Vui lòng thử lại."
+    },
+    "debug": {
+      "title": "Gỡ lỗi",
+      "logDirectory": {
+        "title": "Thư mục nhật ký",
+        "description": "Vị trí lưu trữ các tệp nhật ký"
+      },
+      "logLevel": {
+        "title": "Mức nhật ký",
+        "description": "Đặt mức độ chi tiết của nhật ký"
+      },
+      "updateChecks": {
+        "label": "Kiểm tra cập nhật",
+        "description": "Tự động kiểm tra phiên bản mới của Parrot"
+      },
+      "soundTheme": {
+        "label": "Chủ đề âm thanh",
+        "description": "Chọn chủ đề âm thanh cho phản hồi bắt đầu và kết thúc phát giọng nói"
+      },
+      "historyLimit": {
+        "title": "Giới hạn lịch sử",
+        "description": "Số lượng mục lịch sử tối đa cần giữ",
+        "entries": "mục"
+      },
+      "historyRetention": {
+        "title": "Tự động xóa ghi âm",
+        "description": "Tự động xóa các bản ghi âm cũ để tiết kiệm dung lượng",
+        "never": "Không bao giờ",
+        "preserveLimit": "Giữ {{count}} bản mới nhất",
+        "days3": "Sau 3 ngày",
+        "weeks2": "Sau 2 tuần",
+        "months3": "Sau 3 tháng",
+        "placeholder": "Chọn thời gian lưu giữ..."
+      },
+      "keyboardImplementation": {
+        "title": "Keyboard Implementation",
+        "description": "Choose the keyboard shortcut backend.",
+        "bindingsReset": "Keyboard shortcuts were incompatible and reset to defaults"
+      },
+      "paths": {
+        "appData": "Dữ liệu ứng dụng:",
+        "models": "Mô hình:",
+        "settings": "Cài đặt:"
+      }
+    },
+    "about": {
+      "title": "Giới thiệu",
+      "version": {
+        "title": "Phiên bản",
+        "description": "Phiên bản hiện tại của Parrot"
+      },
+      "appDataDirectory": {
+        "title": "Thư mục dữ liệu ứng dụng",
+        "description": "Vị trí Parrot lưu trữ dữ liệu"
+      },
+      "sourceCode": {
+        "title": "Mã nguồn",
+        "description": "Xem mã nguồn và đóng góp",
+        "button": "Xem trên GitHub"
+      },
+      "supportDevelopment": {
+        "title": "Hỗ trợ phát triển",
+        "description": "Giúp chúng tôi tiếp tục xây dựng Parrot",
+        "button": "Quyên góp"
+      },
+      "acknowledgments": {
+        "title": "Lời cảm ơn",
+        "handy": {
+          "title": "Handy",
+          "description": "Dự án gốc mà Parrot được tách ra từ đó",
+          "details": "Parrot là một nhánh của Handy bởi CJ Pais. Cảm ơn vì đã xây dựng nền tảng đã làm cho Parrot trở nên khả thi."
+        }
+      }
+    }
+  },
+  "footer": {
+    "downloadingModel": "Đang tải {{model}}...",
+    "checkingUpdates": "Đang kiểm tra cập nhật...",
+    "updateAvailable": "Có bản cập nhật: {{version}}",
+    "updateAvailableShort": "Có bản cập nhật",
+    "upToDate": "Đã cập nhật",
+    "downloadUpdate": "Tải cập nhật",
+    "restart": "Khởi động lại",
+    "updateCheckingDisabled": "Đã tắt kiểm tra cập nhật",
+    "downloading": "Đang tải... {{progress}}%",
+    "installing": "Đang cài đặt...",
+    "preparing": "Đang chuẩn bị...",
+    "checkForUpdates": "Kiểm tra cập nhật"
+  },
+  "common": {
+    "loading": "Đang tải...",
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "reset": "Đặt lại",
+    "add": "Thêm",
+    "remove": "Xóa",
+    "delete": "Xóa",
+    "edit": "Chỉnh sửa",
+    "create": "Tạo",
+    "update": "Cập nhật",
+    "close": "Đóng",
+    "open": "Mở",
+    "default": "Mặc định",
+    "enabled": "Đã bật",
+    "disabled": "Đã tắt",
+    "on": "Bật",
+    "off": "Tắt",
+    "yes": "Có",
+    "no": "Không",
+    "noOptionsFound": "Không tìm thấy tùy chọn"
+  },
+  "accessibility": {
+    "permissionsRequired": "Cần quyền truy cập",
+    "permissionsDescription": "Parrot cần quyền truy cập để hoạt động bình thường.",
+    "openSettings": "Mở Cài đặt Hệ thống",
+    "dismiss": "Bỏ qua"
+  },
+  "errors": {
+    "loadDirectory": "Lỗi khi tải thư mục: {{error}}"
+  },
+  "appLanguage": {
+    "title": "Ngôn ngữ ứng dụng",
+    "description": "Thay đổi ngôn ngữ giao diện của Parrot"
+  },
+  "overlay": {
+    "speaking": "Đang phát giọng nói...",
+    "processing": "Đang xử lý..."
+  }
+}

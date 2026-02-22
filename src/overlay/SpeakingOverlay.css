@@ -1,0 +1,179 @@
+.speaking-overlay {
+  height: 36px;
+  width: 172px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0;
+  padding: 6px;
+  background: #000000cc;
+  border-radius: 15px;
+  position: relative;
+  opacity: 0;
+  transition:
+    opacity 220ms ease-out,
+    width 220ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  box-sizing: border-box;
+  will-change: width;
+}
+
+.speaking-overlay.speaking-state {
+  width: 206px;
+  grid-template-columns: 26px 1fr 26px;
+  column-gap: 10px;
+}
+
+.overlay-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.speaking-overlay.speaking-state .overlay-middle {
+  justify-content: center;
+  padding-inline-start: 0;
+}
+
+.speaking-overlay.speaking-state .overlay-left,
+.speaking-overlay.speaking-state .overlay-right {
+  justify-content: center;
+}
+
+.overlay-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 30px;
+}
+
+.speaking-overlay.fade-in {
+  opacity: 1;
+}
+
+.status-text {
+  color: white;
+  font-size: 12px;
+  line-height: 1;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  animation: status-pulse 1.5s infinite ease-in-out;
+  white-space: nowrap;
+}
+
+.speaking-overlay.speaking-state .status-text {
+  animation: none;
+}
+
+@keyframes status-pulse {
+
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.speaking-toggle-button {
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition:
+    background-color 150ms ease-out,
+    transform 100ms ease-out,
+    border-color 150ms ease-out;
+}
+
+.speaking-toggle-button:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.34);
+  transform: scale(1.04);
+}
+
+.speaking-toggle-button:active {
+  transform: scale(0.96);
+}
+
+.speaking-toggle-button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.42);
+}
+
+.speaking-toggle-button:disabled {
+  opacity: 0.65;
+  cursor: default;
+  transform: none;
+}
+
+.mac-close-button {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ff5f56;
+  border: 1px solid #e0443e;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+  transition: all 0.15s ease;
+  z-index: 10;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.mac-close-button::before,
+.mac-close-button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 9px;
+  height: 1.5px;
+  background-color: #4d0000;
+  opacity: 0.5;
+  transition: opacity 0.15s;
+}
+
+.mac-close-button::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.mac-close-button::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.mac-close-button:hover {
+  transform: scale(1.05);
+}
+
+.mac-close-button:hover::before,
+.mac-close-button:hover::after {
+  opacity: 1;
+}
+
+.mac-close-button:active {
+  background-color: #bf4740;
+  border-color: #a8332e;
+  transform: scale(0.95);
+}

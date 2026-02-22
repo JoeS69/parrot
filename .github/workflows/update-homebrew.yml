@@ -1,0 +1,41 @@
+name: Update Homebrew Cask
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  update-cask:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download release DMG and compute SHA256
+        id: sha
+        run: |
+          VERSION="${{ github.event.release.tag_name }}"
+          VERSION="${VERSION#v}"
+
+          ARM_URL="https://github.com/${{ github.repository }}/releases/download/${{ github.event.release.tag_name }}/Parrot_${VERSION}_aarch64.dmg"
+
+          curl -fsSL "$ARM_URL" -o arm.dmg
+
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "arm_sha256=$(shasum -a 256 arm.dmg | awk '{print $1}')" >> $GITHUB_OUTPUT
+
+      - name: Update Homebrew tap
+        env:
+          HOMEBREW_TAP_TOKEN: ${{ secrets.HOMEBREW_TAP_TOKEN }}
+        run: |
+          VERSION="${{ steps.sha.outputs.version }}"
+          ARM_SHA="${{ steps.sha.outputs.arm_sha256 }}"
+
+          git clone "https://x-access-token:${HOMEBREW_TAP_TOKEN}@github.com/rishiskhare/homebrew-parrot.git" tap
+          cd tap
+
+          sed -i "s/version \".*\"/version \"${VERSION}\"/" Casks/parrot.rb
+          sed -i "s/sha256 \".*\"/sha256 \"${ARM_SHA}\"/" Casks/parrot.rb
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add Casks/parrot.rb
+          git commit -m "chore: update parrot cask to ${VERSION}"
+          git push
