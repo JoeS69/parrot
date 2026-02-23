@@ -19,13 +19,18 @@
 
 ---
 
-## What is Parrot?
+## What is Parrot? 🦜
 
-Parrot reads your selected text aloud using a neural TTS model that runs entirely on your device. Your text never leaves your machine: no cloud, no accounts, no internet required after the initial model download.
+Parrot reads your selected text aloud using a small text-to-speech model that runs entirely on your device. Your text never leaves your machine: no cloud, no accounts, no internet required after the initial model download.
 
-The backend is written in Rust, keeping the app fast, lean, and resource-efficient. The model itself is only ~115 MB and runs on any modern CPU with no GPU required.
+The backend is written in Rust, keeping the app fast, lightweight, and resource-efficient. The model itself is only ~115 MB and runs on any modern CPU with no GPU required.
 
-Select text. Press `Option+Space`. Done.
+### How It Works
+
+1. **Select text** in any application
+2. **Press the shortcut** (default: `Option+Space` on macOS, `Ctrl+Space` on Windows/Linux)
+3. A small overlay appears while Parrot synthesizes and plays the audio
+4. Press `Option+P` to pause/resume (all shortcuts are customizable)
 
 ### 🔊 Here's how it sounds (make sure to unmute): 
 https://github.com/user-attachments/assets/baee7c2c-ac25-4418-9d55-713caeb23cee
@@ -68,14 +73,6 @@ On first launch, Parrot prompts you to download the TTS model (~115 MB). Once do
 - **Free forever:** no subscription, no API key, no account required
 - **Pause & resume:** pause and resume playback mid-sentence with a keyboard shortcut
 - **Floating overlay:** a lightweight indicator shows speaking status with pause controls
-- **History:** every utterance is saved with audio for replay or copy
-
-## How It Works
-
-1. **Select text** in any application
-2. **Press the shortcut** (default: `Option+Space` on macOS, `Ctrl+Space` on Windows/Linux)
-3. A small overlay appears while Parrot synthesizes and plays the audio
-4. Press `Option+P` to pause/resume (all shortcuts are customizable)
 
 ## Models
 
@@ -83,6 +80,7 @@ Parrot ships with **Kokoro-82M**, a compact neural TTS model that delivers natur
 
 Kokoro supports **54 voices** across 9 languages. The voice is selected automatically based on your language setting, or choose one manually in **Settings → General**.
 
+### Voices
 | Language | Female Voices | Male Voices |
 |----------|---------------|-------------|
 | English (US) | Alloy, Aoede, Bella, Heart, Jessica, Kore, Nicole, Nova, River, Sarah, Sky | Adam, Echo, Eric, Fenrir, Liam, Michael, Onyx, Puck, Santa |
