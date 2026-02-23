@@ -4,7 +4,7 @@
 
   # Parrot: AI Text-to-Speech
 
-  **Free, lightweight, local AI text-to-speech for your desktop**
+  **A free, offline, private AI text-to-speech for your desktop**
 
   Highlight text in any app, press a shortcut<br/>
   Hear it read aloud *instantly, privately, on your device*
