@@ -163,12 +163,12 @@
         "pressKeys": "キーを押してください...",
         "bindings": {
           "speak": {
-            "name": "文字起こしショートカット",
-            "description": "音声を録音して文字起こしするためのキーボードショートカット。"
+            "name": "読み上げショートカット",
+            "description": "選択したテキストを読み上げます。もう一度押すと停止します。"
           },
           "play_pause": {
-            "name": "Play / Pause Shortcut",
-            "description": "The keyboard shortcut to pause or resume speech playback."
+            "name": "再生/一時停止ショートカット",
+            "description": "音声の再生を一時停止または再開します。"
           }
         },
         "errors": {

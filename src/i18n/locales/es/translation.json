@@ -117,12 +117,12 @@
         "pressKeys": "Presiona teclas...",
         "bindings": {
           "speak": {
-            "name": "Atajo de Habla",
-            "description": "El atajo de teclado para leer en voz alta el texto seleccionado."
+            "name": "Atajo de Leer en voz alta",
+            "description": "Leer el texto seleccionado en voz alta. Presiona de nuevo para detener."
           },
           "play_pause": {
-            "name": "Play / Pause Shortcut",
-            "description": "The keyboard shortcut to pause or resume speech playback."
+            "name": "Atajo de Reproducir/Pausar",
+            "description": "Pausar o reanudar la reproducción de voz."
           }
         },
         "errors": {

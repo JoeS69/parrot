@@ -141,12 +141,12 @@
         "pressKeys": "...اضغط على المفاتيح",
         "bindings": {
           "speak": {
-            "name": "اختصار التفريغ الصوتي",
-            "description": ".اختصار لوحة المفاتيح لتسجيل وتفريغ صوتك"
+            "name": "اختصار القراءة بصوت عالٍ",
+            "description": "اقرأ النص المحدد بصوت عالٍ. اضغط مرة أخرى للإيقاف."
           },
           "play_pause": {
-            "name": "Play / Pause Shortcut",
-            "description": "The keyboard shortcut to pause or resume speech playback."
+            "name": "اختصار تشغيل/إيقاف مؤقت",
+            "description": "إيقاف مؤقت أو استئناف تشغيل الكلام."
           }
         },
         "errors": {

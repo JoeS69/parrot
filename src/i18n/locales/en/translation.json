@@ -99,12 +99,12 @@
         "pressKeys": "Press keys...",
         "bindings": {
           "speak": {
-            "name": "Speak Shortcut",
-            "description": "The keyboard shortcut to speak the selected text aloud."
+            "name": "Read Aloud Shortcut",
+            "description": "Read the selected text aloud. Press again to stop."
           },
           "play_pause": {
-            "name": "Play / Pause Shortcut",
-            "description": "The keyboard shortcut to pause or resume speech playback."
+            "name": "Play/Pause Shortcut",
+            "description": "Pause or resume speech playback."
           }
         },
         "errors": {

@@ -163,12 +163,12 @@
         "pressKeys": "请按键...",
         "bindings": {
           "speak": {
-            "name": "转录快捷键",
-            "description": "用于录制和转录语音的键盘快捷键。"
+            "name": "朗读快捷键",
+            "description": "朗读选中的文本。再次按下停止。"
           },
           "play_pause": {
-            "name": "Play / Pause Shortcut",
-            "description": "The keyboard shortcut to pause or resume speech playback."
+            "name": "播放/暂停快捷键",
+            "description": "暂停或继续语音播放。"
           }
         },
         "errors": {

@@ -145,12 +145,12 @@
         "pressKeys": "Натисніть клавіші...",
         "bindings": {
           "speak": {
-            "name": "Гаряча клавіша транскрипції",
-            "description": "Комбінація клавіш для запису та транскрибування вашого голосу."
+            "name": "Гаряча клавіша Читати вголос",
+            "description": "Прочитати виділений текст вголос. Натисніть знову для зупинки."
           },
           "play_pause": {
-            "name": "Play / Pause Shortcut",
-            "description": "The keyboard shortcut to pause or resume speech playback."
+            "name": "Гаряча клавіша Відтворення/Пауза",
+            "description": "Призупинити або відновити відтворення мовлення."
           }
         },
         "errors": {

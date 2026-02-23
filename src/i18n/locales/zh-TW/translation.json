@@ -145,12 +145,12 @@
         "pressKeys": "請按鍵...",
         "bindings": {
           "speak": {
-            "name": "轉錄快捷鍵",
-            "description": "用於錄製和轉錄語音的鍵盤快捷鍵"
+            "name": "朗讀快捷鍵",
+            "description": "朗讀選取的文字。再次按下停止。"
           },
           "play_pause": {
-            "name": "Play / Pause Shortcut",
-            "description": "The keyboard shortcut to pause or resume speech playback."
+            "name": "播放/暫停快捷鍵",
+            "description": "暫停或繼續語音播放。"
           }
         },
         "errors": {

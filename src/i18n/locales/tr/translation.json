@@ -163,12 +163,12 @@
         "pressKeys": "Tuşlara basın...",
         "bindings": {
           "speak": {
-            "name": "Transkripsiyon Kısayolu",
-            "description": "Sesinizi kaydetmek ve metne dönüştürmek için klavye kısayolu."
+            "name": "Sesli Oku Kısayolu",
+            "description": "Seçili metni sesli oku. Durdurmak için tekrar basın."
           },
           "play_pause": {
-            "name": "Play / Pause Shortcut",
-            "description": "The keyboard shortcut to pause or resume speech playback."
+            "name": "Oynat/Duraklat Kısayolu",
+            "description": "Konuşma oynatmayı duraklat veya devam ettir."
           }
         },
         "errors": {

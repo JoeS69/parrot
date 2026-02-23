@@ -145,12 +145,12 @@
         "pressKeys": "Pressione as teclas...",
         "bindings": {
           "speak": {
-            "name": "Atalho de Transcrição",
-            "description": "O atalho de teclado para gravar e transcrever sua voz."
+            "name": "Atalho de Ler em voz alta",
+            "description": "Ler o texto selecionado em voz alta. Pressione novamente para parar."
           },
           "play_pause": {
-            "name": "Play / Pause Shortcut",
-            "description": "The keyboard shortcut to pause or resume speech playback."
+            "name": "Atalho de Reproduzir/Pausar",
+            "description": "Pausar ou retomar a reprodução de voz."
           }
         },
         "errors": {

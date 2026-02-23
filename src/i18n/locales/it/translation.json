@@ -163,12 +163,12 @@
         "pressKeys": "Premi i tasti...",
         "bindings": {
           "speak": {
-            "name": "Scorciatoia Trascrizione",
-            "description": "La scorciatoia da tastiera per registrare e trascrivere la tua voce."
+            "name": "Scorciatoia Leggi ad alta voce",
+            "description": "Leggi il testo selezionato ad alta voce. Premi di nuovo per interrompere."
           },
           "play_pause": {
-            "name": "Play / Pause Shortcut",
-            "description": "The keyboard shortcut to pause or resume speech playback."
+            "name": "Scorciatoia Riproduci/Pausa",
+            "description": "Metti in pausa o riprendi la riproduzione vocale."
           }
         },
         "errors": {

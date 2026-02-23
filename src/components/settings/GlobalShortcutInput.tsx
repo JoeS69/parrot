@@ -51,7 +51,7 @@ export const GlobalShortcutInput: React.FC<GlobalShortcutInputProps> = ({
     const handleKeyDown = async (e: KeyboardEvent) => {
       if (cleanup) return;
       if (e.repeat) return; // ignore auto-repeat
-      if (e.key === "Escape") {
+      if (e.key === "Escape" && !e.ctrlKey && !e.shiftKey && !e.altKey && !e.metaKey && keyPressed.length === 0) {
         // Cancel recording and restore original binding
         if (editingShortcutId && originalBinding) {
           try {

@@ -163,12 +163,12 @@
         "pressKeys": "Tasten drücken...",
         "bindings": {
           "speak": {
-            "name": "Transkriptions-Tastenkürzel",
-            "description": "Das Tastenkürzel zum Aufnehmen und Transkribieren Ihrer Stimme."
+            "name": "Vorlesen-Tastenkürzel",
+            "description": "Den markierten Text vorlesen. Erneut drücken zum Stoppen."
           },
           "play_pause": {
-            "name": "Play / Pause Shortcut",
-            "description": "The keyboard shortcut to pause or resume speech playback."
+            "name": "Wiedergabe/Pause-Tastenkürzel",
+            "description": "Sprachwiedergabe pausieren oder fortsetzen."
           }
         },
         "errors": {

@@ -163,12 +163,12 @@
         "pressKeys": "Naciśnij klawisze...",
         "bindings": {
           "speak": {
-            "name": "Skrót transkrypcji",
-            "description": "Skrót klawiaturowy do nagrywania i transkrypcji głosu."
+            "name": "Skrót Czytaj na głos",
+            "description": "Przeczytaj zaznaczony tekst na głos. Naciśnij ponownie, aby zatrzymać."
           },
           "play_pause": {
-            "name": "Play / Pause Shortcut",
-            "description": "The keyboard shortcut to pause or resume speech playback."
+            "name": "Skrót Odtwórz/Pauza",
+            "description": "Wstrzymaj lub wznów odtwarzanie mowy."
           }
         },
         "errors": {

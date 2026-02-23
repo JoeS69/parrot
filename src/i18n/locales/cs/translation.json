@@ -163,12 +163,12 @@
         "pressKeys": "Stiskněte klávesy...",
         "bindings": {
           "speak": {
-            "name": "Zkratka přepisu",
-            "description": "Klávesová zkratka pro nahrávání a přepis vašeho hlasu."
+            "name": "Zkratka Číst nahlas",
+            "description": "Přečíst vybraný text nahlas. Stiskněte znovu pro zastavení."
           },
           "play_pause": {
-            "name": "Play / Pause Shortcut",
-            "description": "The keyboard shortcut to pause or resume speech playback."
+            "name": "Zkratka Přehrát/Pozastavit",
+            "description": "Pozastavit nebo obnovit přehrávání řeči."
           }
         },
         "errors": {

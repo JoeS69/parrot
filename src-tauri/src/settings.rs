@@ -333,8 +333,8 @@ pub fn get_default_settings() -> AppSettings {
         "speak".to_string(),
         ShortcutBinding {
             id: "speak".to_string(),
-            name: "Speak Selected Text".to_string(),
-            description: "Reads the currently selected text aloud.".to_string(),
+            name: "Read Aloud Shortcut".to_string(),
+            description: "Read the selected text aloud. Press again to stop.".to_string(),
             default_binding: default_shortcut.to_string(),
             current_binding: default_shortcut.to_string(),
         },
@@ -348,8 +348,8 @@ pub fn get_default_settings() -> AppSettings {
         "play_pause".to_string(),
         ShortcutBinding {
             id: "play_pause".to_string(),
-            name: "Play / Pause".to_string(),
-            description: "Pauses or resumes speech playback while speaking.".to_string(),
+            name: "Play/Pause Shortcut".to_string(),
+            description: "Pause or resume speech playback.".to_string(),
             default_binding: default_play_pause_binding.to_string(),
             current_binding: "disabled".to_string(),
         },

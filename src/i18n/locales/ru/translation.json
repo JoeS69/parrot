@@ -163,12 +163,12 @@
         "pressKeys": "Нажимайте клавиши...",
         "bindings": {
           "speak": {
-            "name": "Горячая клавиша транскрипции",
-            "description": "Сочетание клавиш для записи и транскрибирования вашего голоса."
+            "name": "Горячая клавиша Читать вслух",
+            "description": "Прочитать выделенный текст вслух. Нажмите снова для остановки."
           },
           "play_pause": {
-            "name": "Play / Pause Shortcut",
-            "description": "The keyboard shortcut to pause or resume speech playback."
+            "name": "Горячая клавиша Воспроизведение/Пауза",
+            "description": "Приостановить или возобновить воспроизведение речи."
           }
         },
         "errors": {

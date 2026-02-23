@@ -117,12 +117,12 @@
         "pressKeys": "Appuyez sur les touches...",
         "bindings": {
           "speak": {
-            "name": "Raccourci de Parole",
-            "description": "Le raccourci clavier pour lire le texte sélectionné à voix haute."
+            "name": "Raccourci Lire à voix haute",
+            "description": "Lire le texte sélectionné à voix haute. Appuyez à nouveau pour arrêter."
           },
           "play_pause": {
-            "name": "Play / Pause Shortcut",
-            "description": "The keyboard shortcut to pause or resume speech playback."
+            "name": "Raccourci Lecture/Pause",
+            "description": "Mettre en pause ou reprendre la lecture vocale."
           }
         },
         "errors": {

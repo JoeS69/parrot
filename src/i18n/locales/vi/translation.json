@@ -117,12 +117,12 @@
         "pressKeys": "Nhấn phím...",
         "bindings": {
           "speak": {
-            "name": "Phím tắt phát giọng nói",
-            "description": "Phím tắt để đọc to văn bản đã chọn."
+            "name": "Phím tắt Đọc to",
+            "description": "Đọc to văn bản đã chọn. Nhấn lại để dừng."
           },
           "play_pause": {
-            "name": "Play / Pause Shortcut",
-            "description": "The keyboard shortcut to pause or resume speech playback."
+            "name": "Phím tắt Phát/Tạm dừng",
+            "description": "Tạm dừng hoặc tiếp tục phát giọng nói."
           }
         },
         "errors": {
