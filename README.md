@@ -27,6 +27,9 @@ The backend is written in Rust, keeping the app fast, lean, and resource-efficie
 
 Select text. Press `Option+Space`. Done.
 
+### Here's how it sounds (make sure to unmute): 
+https://github.com/user-attachments/assets/baee7c2c-ac25-4418-9d55-713caeb23cee
+
 ## Installation
 
 ### macOS (Apple Silicon)
